@@ -5,15 +5,19 @@ import Foundation
 //: ### Exercise 1
 //: Example: Here I've declared one String that forms a sentence that makes sense. I've declared a second String that forms a silly sentence when random words are chosen.
 let nounArray = ["puppy", "laptop", "ocean","app", "cow", "skateboard", "developer", "coffee", "moon"]
+let customerSegment = ["male", "female"]
+
 
 let index1 = Int(arc4random() % 9)
 let index2 = Int(arc4random() % 9)
+let index3 = Int(arc4random() % 2)
+let index4 = Int(arc4random() % 9)
 
 let sentence = "The \(nounArray[6]) spilled her \(nounArray[7])."
-let  sillySentence = "The \(nounArray[index1]) jumped over the \(nounArray[index2])."
+let sillySentence = "The \(nounArray[index1]) jumped over the \(nounArray[index2])."
 //: Now try it yourself! Declare a new string that incorporates objects from the noun array above. Write one sentence that makes sense and one "Madlib" sentence with randomly chosen words. Feel free to add words to the noun array or declare a new array.
-let yourSentence = "TODO: Incorporate objects from the noun array here."
-let yourSillySentence = "TODO: Incorporate randomly chosen objects from the noun array here."
+let yourSentence = "\(nounArray[2].capitalized) is a cool name for an \(nounArray[3])"
+let yourSillySentence = "My company, \(nounArray[index1].capitalized) is developing a \(nounArray[index2]) to help \(customerSegment[index3]) with \(nounArray[index4])"
 //: ### Exercise 2
 //: Recreate the shoutString by using the didYouKnowString as a stem.
 let didYouKnowString = "Did you know that the Swift String class comes with lots of useful methods?"
