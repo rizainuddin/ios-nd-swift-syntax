@@ -22,7 +22,7 @@ let yourSillySentence = "My company, \(nounArray[index1].capitalized) is develop
 //: Recreate the shoutString by using the didYouKnowString as a stem.
 let didYouKnowString = "Did you know that the Swift String class comes with lots of useful methods?"
 let whisperString = "psst" + ", " + didYouKnowString.lowercased()
-let shoutString =  "HEY!" + " " + didYouKnowString.replacingOccurrences(of: didYouKnowString, with: didYouKnowString.capitalized)
+let shoutString =  "HEY!" + " " + didYouKnowString.uppercased()
 //: ### Exercise 3
 //: How many characters are in this string? 
 let howManyCharacters = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
