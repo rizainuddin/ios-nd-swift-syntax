@@ -72,6 +72,7 @@ for word in dictionary {
 // Example
 let numOfPennies = 567
 //desired output = "$5.67"
+let dollarsAndCents = "$ \(numOfPennies / 100).\(numOfPennies % 100)"
 //: # Let or Var?
 import UIKit
 import Foundation
