@@ -48,7 +48,7 @@ if word.contains("tuna") {
 //: ### Exercise 6
 //: Write a program that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
-let newLottaLikes = lottaLikes.replacingOccurrences(of: "like", with: "")
+let newLottaLikes = lottaLikes.replacingOccurrences(of: "like,", with: "")
 //: ### Exercise 7
 // Example
 let sillyMonkeyString = "A monkey stole my iPhone"
@@ -58,6 +58,15 @@ let newerString = newString.replacingOccurrences(of: "iPhone", with: "📱")
 //: You can start off with this dictionary and string.
 let dictionary = ["monkey": "🐒", "iPhone":"📱"]
 var newestString = sillyMonkeyString
+
+for word in dictionary {
+    if sillyMonkeyString.contains("monkey") {
+        let newestString = sillyMonkeyString.replacingOccurrences(of: "monkey", with: "🐒")
+    } else if newestString.contains("iPhone") {
+        let mostNewestString = newestString.replacingOccurrences(of: "iPhone", with: "📱")
+    }
+}
+
 //: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Write a program that, given a number of pennies, prints out how much money Josie has in dollars and cents.
 // Example
