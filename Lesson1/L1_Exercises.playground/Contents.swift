@@ -105,12 +105,12 @@ let creditLimit: Double
 var balance: Double
 //: ### Exercise 11
 //: Below is the code to reverse a string. Have a look at the entities declared: stringToReverse and reversedString. Choose whether to declare each with let or var. When you're finished uncomment the code and see if the compiler agrees with your choices!
-//let or var stringToReverse = "Mutable or Immutable? That is the question." //TODO:Choose let or var
-//let or var reversedString = "" //TODO:Choose let or var
-//for character in stringToReverse.characters {
-//    reversedString = "\(character)" + reversedString
-//}
-//print(reversedString, terminator: "")
+let stringToReverse = "Mutable or Immutable? That is the question." //TODO:Choose let or var
+var reversedString = "" //TODO:Choose let or var
+for character in stringToReverse.characters {
+    reversedString = "\(character)" + reversedString
+}
+print(reversedString, terminator: "")
 
 
 
