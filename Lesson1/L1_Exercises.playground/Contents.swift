@@ -101,6 +101,8 @@ let currentTime: Double
 let maximumTimeAllowed: Double
 var timeRemaining: Double
 //: 10b) Imagine you are writing an app for a credit card company. Declare two entities: creditLimit and balance.
+let creditLimit: Double
+var balance: Double
 //: ### Exercise 11
 //: Below is the code to reverse a string. Have a look at the entities declared: stringToReverse and reversedString. Choose whether to declare each with let or var. When you're finished uncomment the code and see if the compiler agrees with your choices!
 //let or var stringToReverse = "Mutable or Immutable? That is the question." //TODO:Choose let or var
