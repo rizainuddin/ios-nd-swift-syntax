@@ -48,6 +48,7 @@ if word.contains("tuna") {
 //: ### Exercise 6
 //: Write a program that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
+let newLottaLikes = lottaLikes.replacingOccurrences(of: "like", with: "")
 //: ### Exercise 7
 // Example
 let sillyMonkeyString = "A monkey stole my iPhone"
