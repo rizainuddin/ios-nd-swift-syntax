@@ -76,7 +76,13 @@ print(newestString)
 // Example
 let numOfPennies = 567
 //desired output = "$5.67"
-let dollarsAndCents = "$ \(numOfPennies / 100).\(numOfPennies % 100)"
+//let dollarsAndCents = "$ \(numOfPennies / 100).\(numOfPennies % 100)"
+
+let dollarInt = numOfPennies/100
+let dollarString = "$" + "\(dollarInt)" + "."
+let centsString = String(numOfPennies % 100)
+let finalString = dollarString + centsString
+
 //: # Let or Var?
 import UIKit
 import Foundation
