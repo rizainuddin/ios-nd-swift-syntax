@@ -78,15 +78,15 @@ import UIKit
 import Foundation
 //: ### Exercise 9
 //: Below is the code to find all the numbers present in an array, convert them to Ints, and calculate their sum. Have a look at the entities declared below: array, sum, and intToAdd. Think about whether each should be a constant or a variable and choose whether to declare them with let or var. When you're finished uncomment the code and see if the compiler agrees with your choices!
-// let or var array = ["A", "13", "B","5","87", "t", "41"] // TODO: Choose constant or variable
-// let or var sum = 0 // TODO: Choose constant or variable
-// for string in array {
-//     if Int(string) != nil {
-//         let or var intToAdd = Int(string)! // TODO: Choose constant or variable
-//         sum += intToAdd
-//     }
-// }
-// print(sum)
+ let array = ["A", "13", "B","5","87", "t", "41"] // TODO: Choose constant or variable
+ var sum = 0 // TODO: Choose constant or variable
+ for string in array {
+     if Int(string) != nil {
+         let intToAdd = Int(string)! // TODO: Choose constant or variable
+         sum += intToAdd
+     }
+ }
+print(sum, terminator: "")
 //: ### Exercise 10
 //: For each of the following pairs, choose whether to declare a constant or a variable.
 //:
