@@ -40,14 +40,11 @@ for letter in gString.characters {
 //: ### Exercise 5
 //: Write a program that tells you whether or not this string contains the substring "tuna".
 let word = "fortunate"
-word.characters.contains("tuna")
-//
-//if word.characters.contains("tuna") {
-//    print("The word \(word) contains tuna")
-//} else {
-//    print("The word \(word) does not contain tuna")
-//
-//}
+if word.contains("tuna") {
+    print("The word \(word) contains tuna")
+} else {
+    print("The word \(word) does not contain tuna")
+}
 //: ### Exercise 6
 //: Write a program that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
