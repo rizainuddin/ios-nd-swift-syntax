@@ -22,17 +22,32 @@ let yourSillySentence = "My company, \(nounArray[index1].capitalized) is develop
 //: Recreate the shoutString by using the didYouKnowString as a stem.
 let didYouKnowString = "Did you know that the Swift String class comes with lots of useful methods?"
 let whisperString = "psst" + ", " + didYouKnowString.lowercased()
-let shoutString =  "HEY! DID YOU KNOW THAT THE SWIFT STRING CLASS COMES WITH LOTS OF USEFUL METHODS?"
+let shoutString =  "HEY!" + " " + didYouKnowString.replacingOccurrences(of: didYouKnowString, with: didYouKnowString.capitalized)
 //: ### Exercise 3
 //: How many characters are in this string? 
 let howManyCharacters = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
+howManyCharacters.characters.count
+
 //: ### Exercise 4
 //: How many times does the letter "g" or "G" appear in the following string? Use a for-in loop to find out!
 let gString = "Gary's giraffe gobbled gooseberries greedily"
 var count = 0
+for letter in gString.characters {
+    if letter == "g" || letter == "G" {
+        count += 1
+    }
+}
 //: ### Exercise 5
 //: Write a program that tells you whether or not this string contains the substring "tuna".
 let word = "fortunate"
+word.characters.contains("tuna")
+//
+//if word.characters.contains("tuna") {
+//    print("The word \(word) contains tuna")
+//} else {
+//    print("The word \(word) does not contain tuna")
+//
+//}
 //: ### Exercise 6
 //: Write a program that deletes all occurrences of the word "like" in the following string.
 let lottaLikes = "If like, you wanna learn Swift, like, you should build lots of small apps, cuz it's like, a good way to practice."
