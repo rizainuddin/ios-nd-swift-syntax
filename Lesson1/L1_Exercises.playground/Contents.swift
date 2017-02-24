@@ -59,14 +59,18 @@ let newerString = newString.replacingOccurrences(of: "iPhone", with: "📱")
 let dictionary = ["monkey": "🐒", "iPhone":"📱"]
 var newestString = sillyMonkeyString
 
-for word in dictionary {
-    if sillyMonkeyString.contains("monkey") {
-        let newestString = sillyMonkeyString.replacingOccurrences(of: "monkey", with: "🐒")
-    } else if newestString.contains("iPhone") {
-        let mostNewestString = newestString.replacingOccurrences(of: "iPhone", with: "📱")
-    }
-}
+//for word in dictionary {
+//    if sillyMonkeyString.contains("monkey") {
+//        let newestString = sillyMonkeyString.replacingOccurrences(of: "monkey", with: "🐒")
+//    } else if newestString.contains("iPhone") {
+//        let mostNewestString = newestString.replacingOccurrences(of: "iPhone", with: "📱")
+//    }
+//}
 
+for (key, value) in dictionary {
+    newestString = newestString.replacingOccurrences(of: key, with: value)
+}
+print(newestString)
 //: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Write a program that, given a number of pennies, prints out how much money Josie has in dollars and cents.
 // Example
